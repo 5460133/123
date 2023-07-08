@@ -1,0 +1,27 @@
+import ccxt
+import time
+
+# 创建Binance交易所对象
+exchange = ccxt.binance({
+    类型为合约交易
+    }
+})
+
+
+# 定义累计盈亏变量
+total_profit_loss = 0
+
+
+# 定义开仓函数
+def open_position(symbol):
+    try:
+        # 获取开仓金额
+        balance = get_account_balance()
+
+        # 根据持仓数决定开仓金额
+        if open_count == 0:
+            open_amount = balance * open_ratio_first
+        elif open_count == 1:
+            open_amount = balance * open_ratio_second
+        elif open_count == 2:
+    
